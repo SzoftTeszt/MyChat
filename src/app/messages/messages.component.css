@@ -1,0 +1,17 @@
+.message{
+    margin:10px 0;
+    width: 80%;
+    padding: 0 5px;
+    float:left;
+    display: block;
+}
+.mymessage{
+    float:right;
+    background-color: greenyellow;
+}
+
+.content::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
