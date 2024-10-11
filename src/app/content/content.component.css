@@ -1,8 +1,8 @@
 app-messages{
-    background: #aaa9ad;
-    height: 75%;
+    background:  #ddd;  
     display:block;
     overflow-y: scroll;
+    height: 75%;
 }
 app-send{
     background-color: #ddd;

@@ -1,13 +1,22 @@
 .message{
     margin:10px 0;
     width: 80%;
-    padding: 0 5px;
+    padding: 10px 15px 10px 10px;
     float:left;
     display: block;
+    border-radius: 10px;
+    background-color:      #aaa9ad;
+    -webkit-box-shadow: 11px 11px 5px -1px rgba(255,255,255,0.5);
+    -moz-box-shadow: 11px 11px 5px -1px rgba(255,255,255,0.5);
+    box-shadow: 11px 11px 5px -1px rgba(255,255,255,0.5);
 }
 .mymessage{
     float:right;
-    background-color: greenyellow;
+    background-color: rgb(106, 171, 9);
+}
+
+.content{
+    padding: 10px;
 }
 
 .content::after {

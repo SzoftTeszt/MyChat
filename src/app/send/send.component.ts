@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BaseService } from '../base.service';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-send',
@@ -8,9 +9,19 @@ import { BaseService } from '../base.service';
 })
 export class SendComponent {
   message=""
-  constructor(private base:BaseService){}
+  userName=""
+
+  constructor(private base:BaseService, private auth:AuthService){
+    auth.getUsername().subscribe(
+      (res)=>this.userName=res
+    )
+  }
 
   sendMessage(){
-    this.base.addMessage(this.message)
+    if (!(this.userName==""))
+    {
+    this.base.addMessage(this.message, this.userName)
+    this.message=""
+    }
   }
 }

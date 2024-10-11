@@ -9,13 +9,17 @@ import { SendComponent } from './send/send.component';
 import { ContentComponent } from './content/content.component';
 import { FormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MessagesComponent,
     SendComponent,
-    ContentComponent
+    ContentComponent,
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
